@@ -31,6 +31,7 @@ public class Door : MonoBehaviour
                 GameManager.instance.keys--;
                 // Load the next scene
                 SceneManager.LoadScene(nextSceneName);
+                
             }
         }
     }

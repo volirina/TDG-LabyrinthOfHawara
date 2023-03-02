@@ -19,7 +19,7 @@ public class MyPlayer : MonoBehaviour
     void Update()
     {
         // Check if the B key is pressed
-        if (Input.GetKeyDown(KeyCode.B))
+        if (Input.GetKeyDown(KeyCode.B) && GameManager.instance.bombs > 0)
         {
             // Instantiate the bomb prefab at the player's position
             currentBomb = Instantiate(bombPrefab, transform.position, Quaternion.identity);
